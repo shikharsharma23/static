@@ -10,7 +10,7 @@ pipeline {
             steps {
                 withAWS(region:'us-west-2', credentials:'aws-static') {
                     // do something
-                    s3Upload(bucket:"jenkins-pipelines-on-aws", includePathPattern:'**/*');
+                    s3Upload(bucket:"jenkinsawsudacity", includePathPattern:'**/*');
                 }
             }
         }
